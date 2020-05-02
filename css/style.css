@@ -11,13 +11,30 @@
 }
 .nav {
 }
-.header__nav--button {
+.header__nav-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
 }
+.header__nav-button:active {
+    transform: translateY(1px);
+}
+.header__nav-button:focus {
+    box-shadow: 0 0 0 3px #41F6D7;
+ }
+ .header__nav-button {
+    outline: none;
+ }
+
 .button {
 }
 .logo {
-}
-.header__nav-button {
 }
 .container {
 }
