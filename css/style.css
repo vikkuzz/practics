@@ -1,0 +1,62 @@
+.mobile-body {
+    
+    width: 320px;
+    
+}
+.header {
+}
+.mobile-body__header {
+}
+.header__nav {
+}
+.nav {
+}
+.header__nav--button {
+}
+.button {
+}
+.logo {
+}
+.header__nav-button {
+}
+.container {
+}
+.container__title {
+}
+.title {
+}
+.container__menu {
+}
+.scroll-menu {
+}
+.scroll-menu__button {
+}
+.main {
+}
+.main__text {
+}
+.main__p {
+}
+.hidden-text {
+    display: none;
+}
+.check {
+    padding-left: 1.2em;
+}
+.check__input {
+    position: absolute;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.check__box {
+    position: absolute;
+    margin-left: -1.2em;
+    width: 1em;
+    height: 1em;
+    background: url(../img/icon.png) no-repeat center;
+    
+}
+.check__input:checked ~ .hidden-text {
+    display: inline-block;
+}

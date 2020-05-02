@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="ремонт, техника, бренды, сервисный центр, Dell">
+    <meta name="description" content="Мы являемся авторизованным сервисным центром по ремонту техники Dell.">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Ремонт техники</title>
 </head>
 <body>
-    <div class="mobile">
-        <div class="header mobile__header">
+    <div class="mobile-body">
+        <div class="header mobile-body__header">
             <nav class="header__nav nav">
-                <button class="header__nav--button button"></button>
-                <img class="header__" src="">
-                <button class="header__nav-button button"></button>
-                <button class="header__nav-button button"></button>
+                <button class="header__nav--button button"><img src="img/burger.svg" alt=""></button>
+                <img class="logo" src="img/Group.svg" alt="">
+                <button class="header__nav-button button"><img src="img/repair.svg" alt=""></button>
+                <button class="header__nav-button button"><img class="logo" src="img/checkstatus.svg" alt=""></button>
             </nav>
         </div>
         <section class="container">
@@ -20,9 +23,30 @@
                 Услуги и сервисы
             </div>
             <menu class="container__menu scroll-menu">
-                                
+                <button class="scroll-menu__button button">Ремонтируемые бренды</button>
+                <button class="scroll-menu__button button">Ремонтируемые устройства</button>
+                <button class="scroll-menu__button button">Цены на услуги</button>
+                <button class="scroll-menu__button button">Адреса сервисных центров</button>
+                <button class="scroll-menu__button button">Специальные цены</button>
             </menu>
         </section>
+        <main class="main">
+            <div class="main__text">
+                <p class="main__p">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <label class="check">
+                    <input class="check__input" type="checkbox" name="read-more">
+                    <span class="check__box"></span>
+                    Читать далее
+                
+                <p class="main__p hidden-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+                что подтверждает большое количество постоянных клиентов. 
+                Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                </p></label>
+            </div>
+            <img src="img/CPS.jpg" alt="">
+        </main>
 
     </div>
 </body>
