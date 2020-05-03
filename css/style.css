@@ -24,7 +24,7 @@
 
 .mobile-body {
     font-family: 'TTLakes', sans-serif;
-    width: 320px;
+    min-width: 320px;
     
 }
 .header {
