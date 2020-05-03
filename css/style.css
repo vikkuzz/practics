@@ -20,7 +20,9 @@
 	font-style: normal;
 }
 
-
+body {
+    margin: 0 auto;
+}
 
 .mobile-body {
     font-family: 'TTLakes', sans-serif;
@@ -76,6 +78,7 @@ button:focus {
     cursor: pointer;
     border: none; 
     font-family: inherit;
+    font-weight: 500;
     color: inherit;
     background-color: transparent;
 }
