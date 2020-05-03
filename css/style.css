@@ -1,20 +1,27 @@
 @font-face {
 	font-family: 'TTLakes';
 	src: url('../fonts/TTLakes/TTLakes-Bold.eot');
-	src: local('☺'), url('../fonts/TTLakes/TTLakes-Bold.woff') format('woff'), url('fonts/TTLakes-Bold.ttf') format('truetype'), url('fonts/TTLakes-Bold.svg') format('svg');
+	src: local('☺'), url('../fonts/TTLakes/TTLakes-Bold.woff') format('woff'), url('/fonts/TTLakes-Bold.ttf') format('truetype'), url('/fonts/TTLakes-Bold.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'TTLakes';
 	src: url('../fonts/TTLakes/TTLakes-Regular.eot');
-	src: local('☺'), url('../fonts/TTLakes/TTLakes-Regular.woff') format('woff'), url('fonts/TTLakes-Regular.ttf') format('truetype'), url('fonts/TTLakes-Regular.svg') format('svg');
+	src: local('☺'), url('../fonts/TTLakes/TTLakes-Regular.woff') format('woff'), url('/fonts/TTLakes-Regular.ttf') format('truetype'), url('/fonts/TTLakes-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
-* {
-    margin: 0;
+@font-face {
+	font-family: 'TTLakes';
+	src: url('/fonts/TTLakes/TTLakes-Medium.eot');
+	src: local('☺'), url('/fonts/TTLakes/TTLakes-Medium.woff'),  format('truetype'), url('/fonts/TTLakesCondensed-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
 }
+
+
+
 .mobile-body {
     font-family: 'TTLakes', sans-serif;
     width: 320px;
@@ -61,7 +68,9 @@
 button:focus {
    box-shadow: 0 0 0 2px #41F6D7;
  }
-
+.button:hover {
+    box-shadow: 0 0 0 2px #41F6D7;
+}
 .button {
     outline: none;
     cursor: pointer;
@@ -76,29 +85,36 @@ button:focus {
     background: #F8F8F8;
     border-top: 1px solid #41F6D7;
     display: flex;
-    padding: 16px;
+    padding: 24px 16px;
     flex-direction: column;
 }
-.container__title::before {
+.title::before {
     content: url(../img/highlight.svg);
-    position: absolute;
-    left: 0px;
+    position: relative;
+    left: -16px;
     color: #41F6D7;
 }
-}
-.title {
-    
+.container__title {
+    display: flex;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
 }
 .container__menu {
     height: 65px;
+    padding: 3px 3px;
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
-    margin-bottom: 24px 0;
 }
 .scroll-menu {
     display: flex;
     flex-direction: row;
+    
 }
 .scroll-menu__button:focus {
     background-color: white;
@@ -113,6 +129,10 @@ button:focus {
     white-space: nowrap;
 }
 .main {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
 }
 .main__p {
 }
@@ -120,7 +140,7 @@ button:focus {
     display: none;
 }
 .check {
-    padding-left: 1.2em;
+    padding-left: 30px;
 }
 .check__input {
     position: absolute;
@@ -136,11 +156,18 @@ button:focus {
 }
 .check__box {
     position: absolute;
-    margin-left: -1.2em;
+    margin-left: -25px;
+    margin-top: 5px;
     width: 1em;
     height: 1em;
     background: url(../img/icon.png) no-repeat center;
-    
+}
+.span-read-more {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 .check__input:checked ~ .hidden-text {
     display: inline-block;
