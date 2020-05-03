@@ -79,7 +79,7 @@ button:focus {
     border: none; 
     font-family: inherit;
     font-weight: 500;
-    color: inherit;
+    color: #7E7E82;
     background-color: transparent;
 }
 .logo {
@@ -171,6 +171,7 @@ button:focus {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+    color: #1B1C21;
 }
 .check__input:checked ~ .hidden-text {
     display: inline-block;
