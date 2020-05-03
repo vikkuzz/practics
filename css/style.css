@@ -32,14 +32,14 @@ body {
 .header {
     display: flex;
     height: 88px;
-    justify-content: center;
     align-items: center;
     padding-left: 0 16px 0 16px;
     margin: 0;
     
 }
 .mobile-body__header {
-    
+    display: flex;
+    width: auto;
 }
 .divider {
     background-color: #EAEAEA;;
@@ -47,10 +47,10 @@ body {
     height: 32px;
 }
 .header__nav {
-    width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
     padding: 0 16px 0 16px;
 }
 .nav {
