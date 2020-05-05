@@ -30,7 +30,9 @@
        медиа
              
 ********************/
-
+@media screen and (min-width: 1120px) {
+    
+}
 @media screen and (max-width: 1119px) and (min-width: 768px)
  {
 .header__nav {
