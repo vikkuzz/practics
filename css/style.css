@@ -35,7 +35,7 @@
  {
 
 }
-@media screen and (max-width: 767px) not (orientation: landscape){
+@media not screen andnot screen and (orientation: portrait), (max-width: 767px) {
 .header__divider-left {
     display: none;
 }
