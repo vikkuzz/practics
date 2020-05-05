@@ -31,19 +31,32 @@
              
 ********************/
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1119px) and (min-width: 768px)
  {
 .header__nav {
     padding: 0 24px;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.divider {
+    margin: 0 20px;
 }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) and (min-width: 320px) {
 .header__divider-left {
     display: none;
 }
+.header__nav {
+    padding: 0 16px;
+    justify-content: space-between;
+}
 }
 
+/*******************
 
+        CSS
+
+*******************/
 body {
     margin: 0 auto;
 }
@@ -59,7 +72,6 @@ body {
     align-items: center;
     margin: 0;
     width: auto;
-    border: 1px solid black;
 }
 .mobile-body__header {
 }
@@ -67,16 +79,24 @@ body {
     background-color: #EAEAEA;;
     width: 2px;
     height: 32px;
+
 }
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-    flex-grow: 1;
-    border: 1px solid rgb(228, 13, 13);
-}
+
 .nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.sub-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header__nav--right {
+    justify-content: flex-end;
+}
+.header__nav--right button:not(:nth-last-child(2)) {
+    margin-left: 16px;
 }
 .header__nav-button {
     padding: 0;
@@ -198,4 +218,7 @@ button:focus {
 }
 .check__input:checked ~ .hidden-text {
     display: inline-block;
+}
+.container__foto {
+    background-color: #F8F8F8;
 }
