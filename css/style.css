@@ -1,3 +1,8 @@
+
+/*****************
+      шрифты
+*****************/
+
 @font-face {
 	font-family: 'TTLakes';
 	src: url('../fonts/TTLakes/TTLakes-Bold.eot');
@@ -19,6 +24,23 @@
 	font-weight: 500;
 	font-style: normal;
 }
+
+/********************
+
+       медиа
+             
+********************/
+
+@media screen and (min-width: 768px) and (orientation: landscape)
+ {
+
+}
+@media screen and (max-width: 767px) {
+.header__divider-left {
+    display: none;
+}
+}
+
 
 body {
     margin: 0 auto;
