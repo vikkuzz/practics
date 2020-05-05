@@ -152,7 +152,7 @@ button:focus {
     appearance: none;
 }
 .check__input:focus + .check__box {
-    box-shadow: 0 0 0 3px #41F6D7;
+    box-shadow: 0 0 0 2px #41F6D7;
     width: 1em;
     height: 1em;
     border-radius: 2px;
