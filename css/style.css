@@ -30,7 +30,9 @@
        медиа
              
 ********************/
-
+@media screen and (min-width: 1120px) {
+    
+}
 @media screen and (max-width: 1119px) and (min-width: 768px)
  {
 .header__nav {
@@ -41,6 +43,9 @@
 .divider {
     margin: 0 20px;
 }
+.container__content {
+    display: flex;
+}
 }
 @media screen and (max-width: 767px) and (min-width: 320px) {
 .header__divider-left {
@@ -50,6 +55,23 @@
     padding: 0 16px;
     justify-content: space-between;
 }
+.container__foto {
+    margin: 16px 0;
+}
+.logo {
+    margin-left: 16px;
+}
+.container__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+}
+}
+@media screen and (width: 320px) {
+    .container__foto {
+        margin: 16px -16px;
+    }
 }
 
 /*******************
@@ -72,8 +94,6 @@ body {
     align-items: center;
     margin: 0;
     width: auto;
-}
-.mobile-body__header {
 }
 .divider {
     background-color: #EAEAEA;;
@@ -125,8 +145,6 @@ button:focus {
     color: #7E7E82;
     background-color: transparent;
 }
-.logo {
-}
 .container {
     background: #F8F8F8;
     border-top: 1px solid #41F6D7;
@@ -156,11 +174,12 @@ button:focus {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
+    margin-top: 24;
+    margin-bottom: 0;
 }
 .scroll-menu {
     display: flex;
     flex-direction: row;
-    
 }
 .scroll-menu__button:focus {
     background-color: white;
@@ -175,12 +194,14 @@ button:focus {
     white-space: nowrap;
 }
 .main {
+    padding-top: 0;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
 }
 .main__p {
+    margin-top: 0;
 }
 .hidden-text {
     display: none;
